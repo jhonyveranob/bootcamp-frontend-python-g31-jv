@@ -26,6 +26,19 @@ h4{
 }
 
 h5{
-    
+    background-color:aqua;
+}
+
+#estado{
+    background-color: yellow;
+}
+.btn{
+    background-color: red;
+}
+.texto-resaltado{
+    color: blue;
+}
+.btn-verde{
+    background-color: greenyellow;
 }
 
