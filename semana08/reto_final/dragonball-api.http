@@ -1,0 +1,30 @@
+### Listar a todos los personajes
+GET https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball
+
+### Crear un personaje
+POST https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball
+Content-Type: application/json
+
+{
+  "name": "Goku",
+  "image": "https://dragonball-api.com/characters/goku_normal.webp",
+  "race": "Saiyan",
+  "gender": "Male"
+}
+
+### Obtener la información de un personaje
+GET https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball/28257ec1-1584-4367-b861-52024329c2af
+
+### Borrar un personaje
+DELETE https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball/1f34c91d-695c-41d8-8506-383ef4aa046a
+
+### Actualizar un personaje
+PUT https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball/28257ec1-1584-4367-b861-52024329c2af
+Content-Type: application/json
+
+{
+  "name": "Goku Super Saiyan",
+  "image": "https://dragonball-api.com/characters/goku_ssj.webp",
+  "race": "Saiyan",
+  "gender": "Male"
+}
