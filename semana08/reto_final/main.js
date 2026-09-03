@@ -1,4 +1,7 @@
-const API_URL = 'https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball'
+//const API_URL = 'https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball'
+const APIBOX_URL = 'https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball';
+const API_URL = window.location.hostname.endsWith('netlify.app') ? '/api/dragonball' : APIBOX_URL;
+
 
 const cargarPersonajes = async () => {
   document.querySelector('#loading').classList.toggle('hidden')
@@ -26,8 +29,8 @@ const renderPersonajes = (personajes = []) => {
     const li = document.createElement('li')
     li.className = 'flex items-center gap-4 bg-white border border-neutral-200 rounded-xl px-4 py-3 hover:border-neutral-300 transition-colors'
     li.innerHTML = `
-      <div class="shrink-0 w-14 h-14 rounded-lg border border-neutral-200 flex items-center justify-center bg-neutral-50 overflow-hidden">
-        <img src="${personaje.image}" alt="${personaje.name}" class="w-full h-full object-cover" />
+      <div class="shrink-0 w-16 h-16 rounded-lg border border-neutral-200 flex items-center justify-center bg-neutral-50 overflow-hidden">
+        <img src="${personaje.image}" alt="${personaje.name}" class="w-full h-full object-contain object-center" />
       </div>
       <div class="flex-1 min-w-0">
         <p class="text-sm font-medium truncate">${personaje.name}</p>

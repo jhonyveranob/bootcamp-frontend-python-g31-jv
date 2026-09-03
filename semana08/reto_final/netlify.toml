@@ -1,0 +1,12 @@
+[[redirects]]
+  from = "/api/dragonball"
+  to = "https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/dragonball/*"
+  to = "https://apibox.vercel.app/mxoRxINQFH2Bgl6chvTe5lEleNBWWHbV/api/dragonball/:splat"
+  status = 200
+  force = true
+  
